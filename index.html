@@ -6,31 +6,58 @@
   <style>
     body {
       color: #ffffff;
-      background-color:greenyellow;
+      background: linear-gradient(to right, #141e30, #243b55);
       font-family: Arial, sans-serif;
-      font-size: 14px;
+      font-size: 16px;
+      text-align: center;
+      margin: 0;
+      padding: 0;
     }
-    
+
+    .container {
+      padding: 50px;
+    }
+
     h1 {
       font-size: 500%;
-      font-weight: normal;
-      margin-bottom: 0;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #f5a623;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     }
-    
+
     h2 {
       font-size: 200%;
       font-weight: normal;
-      margin-bottom: 0;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    p {
+      font-size: 18px;
+      color: #dcdcdc;
+    }
+
+    .logo {
+      width: 150px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .banner {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     }
   </style>
 </head>
 <body>
-  <div align="center">
+  <div class="container">
+    <img src="your-logo.png" alt="Logo" class="logo">
     <h1>Congratulations!</h1>
-    <h2>I am kamaleshwar M018042 and I have successfully created a pipeline that retrieved this source application from an Amazon S3 bucket and deployed it 
-	to three Amazon EC2 instances using AWS CodeDeploy.</h2>
-    <p>For next steps, read the AWS CodePipeline Documentation.</p>
+    <h2>I am Kamaleshwar M018042 and I have successfully created a pipeline that retrieved this source application from an Amazon S3 bucket and deployed it to three Amazon EC2 instances using AWS CodeDeploy.</h2>
+    <p>For next steps, read the <a href="https://docs.aws.amazon.com/codepipeline/" target="_blank" style="color: #f5a623; text-decoration: none;">AWS CodePipeline Documentation</a>.</p>
   </div>
 </body>
 </html>
-
