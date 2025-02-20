@@ -3,47 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Page</title>
+    <title>My Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
-            padding: 50px;
-        }
-        .container {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
-            margin: auto;
-        }
-        h1 {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ffecd2, #fcb69f);
             color: #333;
         }
-        p {
-            color: #666;
-        }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background: #007BFF;
+        header {
+            background: #ff7e5f;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
             color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s;
         }
-        .btn:hover {
-            background: #0056b3;
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+        }
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            object-fit: cover;
+            margin-right: 40px;
+        }
+        .content {
+            max-width: 600px;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #ff5733;
+            font-weight: 600;
+        }
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+        .skill-box span {
+            background: #ff7e5f;
+            color: white;
+            padding: 10px 15px;
+            margin: 5px;
+            display: inline-block;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .project-card {
+            background: white;
+            padding: 20px;
+            margin: 10px auto;
+            width: 60%;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #ff7e5f;
+            font-weight: bold;
+            color: white;
         }
     </style>
 </head>
 <body>
+    <header>
+        Welcome to My Profile
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
     <div class="container">
-        <h1>Welcome to My Page</h1>
-        <p>This is a random HTML and CSS file.</p>
-        <a href="#" class="btn">Click Me</a>
+        <img src="Passport_Photograph.jpg" alt="Profile Image" class="profile-img">
+        <div class="content">
+            <h2>About Me</h2>
+            <p>I am Kamaleshwar, B.Tech IT graduate from Bharath University in 2024.
+               During my academics, I done internships and projects which helped me to build solid foundational skills.
+               I am passionate about learning new technologies and implementing them in real-world scenarios. 
+               Now I am looking for an opportunity to work in a challenging environment to prove my skills and utilize my knowledge to the fullest. 
+            </p>
+        </div>
     </div>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill-box">
+            <span>Python</span>
+            <span>SQL</span>
+            <span>CLOUD</span>
+            <span>DevOps</span>
+            <span>HTML</span>
+            <span>CSS</span>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">Production Progression Display</div>
+        <div class="project-card">Cars Price Prediction System</div>
+        <div class="project-card">Image Classification using Tensorflow</div>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email : skamaleshwar55@gmail.com</p>
+        <p>LinkedIn : linkedin.com/in/kamaleshwars/</p>
+        <p>GitHub : github.com/KamaleshwarS</p>
+    </section>
 </body>
 </html>
